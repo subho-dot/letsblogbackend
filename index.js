@@ -4,6 +4,7 @@ import express from "express";
 import authRoutes from "./routes/auth.js"
 import postRoutes from "./routes/posts.js"
 import multer from "multer";
+import {} from 'dotenv/config';
 const PORT = process.env.PORT;
 
 

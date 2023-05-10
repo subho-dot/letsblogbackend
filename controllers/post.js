@@ -1,5 +1,6 @@
 import {PostModel} from "../controllers/auth.js";
 import jwt from "jsonwebtoken";
+import {} from 'dotenv/config';
 const SECRET = process.env.SECRET;
 
 export const getPosts = async (req,res) => {
