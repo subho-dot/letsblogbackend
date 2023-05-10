@@ -4,6 +4,7 @@ import express from "express";
 import authRoutes from "./routes/auth.js"
 import postRoutes from "./routes/posts.js"
 import multer from "multer";
+const PORT = process.env.PORT;
 
 
 const storage = multer.diskStorage({
@@ -30,7 +31,7 @@ app.use(cookieParser());
 app.use("/server/auth", authRoutes);
 app.use("/server/posts", postRoutes);
 
-app.listen(8800, () => {
+app.listen(PORT, () => {
   console.log("server started");
 })
 
